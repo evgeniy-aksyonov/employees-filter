@@ -35,8 +35,6 @@ const apiReducer = (state = INITIAL_STATE, action) => {
   if (action.type.startsWith(API_ACTIONS.FETCH_SUCCESS)) {
     const inner = camelCase(action.type.replace(API_ACTIONS.FETCH_SUCCESS, ''));
 
-    console.log('action: ', action);
-
     return {
       ...state,
       [inner]: {
