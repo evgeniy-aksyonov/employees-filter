@@ -12,10 +12,7 @@ export default function NavigationItem({ id, jobId, title }) {
   }, [jobId, dispatch]);
 
   return (
-    <ListItemButton
-      onClick={action}
-      // selected={jobId === appState.selectedJob}
-    >
+    <ListItemButton onClick={action} selected={jobId === appState.selectedJob}>
       <ListItemText primary={title} />
     </ListItemButton>
   );
