@@ -1,12 +1,13 @@
-import Employees from "components/Employees";
-import Jobs from "components/Jobs";
+import { ThemeProvider, createTheme } from '@mui/material/styles';
+import AppContainer from './AppContainer';
+
+const theme = createTheme();
 
 function App() {
   return (
-    <div>
-      <Jobs />
-      <Employees />
-    </div>
+    <ThemeProvider theme={theme}>
+      <AppContainer />
+    </ThemeProvider>
   );
 }
 
