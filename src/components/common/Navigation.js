@@ -42,7 +42,6 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export default function Navigation({ loading, services, title = '' }) {
-  console.log('Navigation services(data): ', services);
   const classes = useStyles();
   const [mobileOpen, setMobileOpen] = React.useState(false);
   const handleDrawerToggle = useCallback(() => {

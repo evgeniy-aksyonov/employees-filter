@@ -11,7 +11,7 @@ function Jobs() {
     performFetch();
   }, [performFetch]);
 
-  return <Navigation loading={loading} services={data} />;
+  return <Navigation loading={loading} services={data} title={'react + redux + redux-saga'} />;
 }
 
 export default Jobs;
