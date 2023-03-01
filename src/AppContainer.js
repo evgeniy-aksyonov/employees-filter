@@ -1,6 +1,6 @@
+import { makeStyles } from '@mui/styles';
 import Employees from 'components/Employees';
 import Jobs from 'components/Jobs';
-import { makeStyles } from '@mui/styles';
 
 const useStyles = makeStyles((theme) => ({
   root: {
